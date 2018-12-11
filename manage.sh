@@ -116,7 +116,7 @@ case "$1" in
         screen -R $SCREEN
     ;;
 	*)
-    echo -e "$ORANGE Utilisation :$NORMAL ./start.sh {start|stop|status|screen|restart}"
+    echo -e "$ORANGE Utilisation :$NORMAL ./manage.sh {start|stop|status|screen|restart}"
     exit 1
     ;;
 esac
