@@ -41,7 +41,7 @@ case "$1" in
         echo -e "$ORANGE Le serveur [$SCREEN] va démarrer.$NORMAL"
 		screen -dm -S $SCREEN
 		sleep 2
-		screen -x $SCREEN -X stuff "cd "$FIVEM_PATH"/server-data && bash "$FIVEM_PATH"/run.sh +set txAdminPort 40125
+		screen -x $SCREEN -X stuff "cd "$FIVEM_PATH"/fx-server-data && bash "$FIVEM_PATH"/run.sh +set txAdminPort 40125
 		"
 		echo -e "$ORANGE Restart des sessions.$NORMAL"
 		sleep 20
@@ -93,7 +93,7 @@ case "$1" in
         echo -e "$ORANGE Le serveur [$SCREEN] va démarrer.$NORMAL"
 		screen -dm -S $SCREEN
 		sleep 2
-		screen -x $SCREEN -X stuff "cd "$FIVEM_PATH"/server-data && bash "$FIVEM_PATH"/run.sh +exec server.cfg 
+		screen -x $SCREEN -X stuff "cd "$FIVEM_PATH"/fx-server-data && bash "$FIVEM_PATH"/run.sh +set txAdminPort 40125
 		"
 		echo -e "$ORANGE Restart des sessions.$NORMAL"
 		sleep 20
