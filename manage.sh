@@ -13,7 +13,7 @@
     MSG_30="Mon dieu !! Dans 30 secondes vous serez tous morts si vous ne fuyez pas !"
 	
 # Path
-    FIVEM_PATH=/home/FiveM
+    FIVEM_PATH=/home/fx-server
 
 # Screen
     SCREEN="fxserver"
@@ -41,7 +41,7 @@ case "$1" in
         echo -e "$ORANGE Le serveur [$SCREEN] va démarrer.$NORMAL"
 		screen -dm -S $SCREEN
 		sleep 2
-		screen -x $SCREEN -X stuff "cd "$FIVEM_PATH"/server-data && bash "$FIVEM_PATH"/run.sh +exec server.cfg 
+		screen -x $SCREEN -X stuff "cd "$FIVEM_PATH"/server-data && bash "$FIVEM_PATH"/run.sh +set txAdminPort 40125
 		"
 		echo -e "$ORANGE Restart des sessions.$NORMAL"
 		sleep 20
